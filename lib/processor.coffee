@@ -71,7 +71,7 @@ module.exports = class Processor
     size = @getSize(version.size)
     params =
       customArgs: version.custom or @config.custom
-      srcPath: path
+      srcData: path
       width: size.width
       height: size.height
       format: version.extension or @config.extension
